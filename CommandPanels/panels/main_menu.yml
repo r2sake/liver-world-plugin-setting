@@ -1,0 +1,91 @@
+panels:
+  main_menu:
+    perm: default
+    rows: 6
+    title: '&8Main Menu'
+    empty: BLACK_STAINED_GLASS_PANE
+    commands: 
+    - main_menu
+    - mm
+    item:
+      '8':
+        material: BARRIER
+        stack: 1
+        name: '&e閉じる'
+        lore:
+        - '通常メニュー同様、EやESCキーでも閉じれます'
+        commands:
+        - cpc
+      '10':
+        material: RED_BED
+        stack: 1
+        name: 'タウンホームに移動します'
+        lore:
+        - '&7タウンホームに移動します'
+        - '&7町に所属し、所属した町がホームポイントを設定することで利用できます'
+        commands:
+          - town spawn
+          - msg= &cタウンホーム&eに移動しました
+      '11':
+        material: OAK_DOOR
+        stack: 1
+        name: '&eメインワールド'
+        lore:
+        - '&7メインワールドに移動します'
+        commands:
+          - console= mvtp %cp-player-displayname% world
+          - msg= &cメインワールド&eに移動しました
+      '13':
+        material: GRASS_BLOCK
+        stack: 1
+        name: '&e【資源】オーバーワールド'
+        lore:
+        - '&7【資源】オーバーワールドに移動します'
+        commands:
+        - console= mvtp %cp-player-displayname% m_over
+        - msg= &c【資源】オーバーワールド&eに移動しました
+      '14':
+        material: NETHERRACK
+        stack: 1
+        name: '&e【資源】ネザー'
+        lore:
+        - '&7【資源】ネザーに移動します'
+        commands:
+        - console= mvtp %cp-player-displayname% m_nether
+        - msg= &c【資源】ネザー&eに移動しました
+      '15':
+        material: END_STONE
+        stack: 1
+        name: '&e【資源】エンド'
+        lore:
+        - '&7【資源】エンドに移動します'
+        - 'メインワールドでエンドラが討伐されると開放されます'
+        commands:
+        - msg= &cエンダードラゴン&eの討伐が確認されていません
+      '37':
+        material: IRON_PICKAXE
+        stack: 1
+        name: '&eJobs'
+        lore:
+        - 'Jobsメニューを開きます'
+        commands:
+        - jobs browse
+      '38':
+        material: IRON_SWORD
+        stack: 1
+        name: '&emcMMO'
+        lore:
+        - 'mcmmoメニューを開きます'
+        commands:
+        - open= mcmmo_menu
+      '39':
+        material: EMERALD
+        stack: 1
+        name: '&eTowny'
+        lore:
+        - 'Townyメニューを開きます'
+        commands:
+        - open= towny_menu
+        
+
+        

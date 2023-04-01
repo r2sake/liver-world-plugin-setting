@@ -1,0 +1,81 @@
+panels:
+  mcmmo_menu:
+    perm: default
+    rows: 6
+    title: '&8mcMMO Menu'
+    commands: 
+    - mcmmo_menu
+    empty: BLACK_STAINED_GLASS_PANE
+    item:
+      '10':
+        material: DEEPSLATE_BRICKS
+        stack: 1
+        name: ''
+      '11':
+        material: DEEPSLATE_BRICKS
+        stack: 1
+        name: ''
+      '12':
+        material: DEEPSLATE_BRICKS
+        stack: 1
+        name: ''
+      '13':
+        material: DEEPSLATE_BRICKS
+        stack: 1
+        name: ''
+      '14':
+        material: DEEPSLATE_BRICKS
+        stack: 1
+        name: ''
+      '15':
+        material: DEEPSLATE_BRICKS
+        stack: 1
+        name: ''
+      '16':
+        material: DEEPSLATE_BRICKS
+        stack: 1
+        name: ''
+      '19':
+        material: DEEPSLATE_BRICKS
+        stack: 1
+        name: ''
+      '25':
+        material: DEEPSLATE_BRICKS
+        stack: 1
+        name: ''
+      '28':
+        material: DEEPSLATE_BRICKS
+        stack: 1
+        name: ''
+      '34':
+        material: DEEPSLATE_BRICKS
+        stack: 1
+        name: ''
+      '37':
+        material: DEEPSLATE_BRICKS
+        stack: 1
+        name: ''
+      '38':
+        material: DEEPSLATE_BRICKS
+        stack: 1
+        name: ''
+      '39':
+        material: DEEPSLATE_BRICKS
+        stack: 1
+        name: ''
+      '40':
+        material: DEEPSLATE_BRICKS
+        stack: 1
+        name: ''
+      '41':
+        material: DEEPSLATE_BRICKS
+        stack: 1
+        name: ''
+      '42':
+        material: DEEPSLATE_BRICKS
+        stack: 1
+        name: ''
+      '43':
+        material: DEEPSLATE_BRICKS
+        stack: 1
+        name: ''

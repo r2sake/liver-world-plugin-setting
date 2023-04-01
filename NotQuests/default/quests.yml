@@ -1,0 +1,102 @@
+quests:
+  TheVirus:
+    displayName: 凶悪なウイルス
+    description: 致命的なウイルスがウィンターフェルの人々に感染してしまった。ウイルスがこれ以上広がらないように、感染した村人たちを殺害しなければならない。
+    objectives:
+      '1':
+        objectiveType: BreakBlocks
+        progressNeededExpression: '1'
+        specifics:
+          itemStackSelection:
+            materials:
+              '1': DIRT
+            any: false
+          deductIfBlockPlaced: true
+        description: The infected Zombies shat on the street. Clean it up by breaking
+          64 dirt blocks!
+        displayName: Stinky Street
+      '2':
+        objectiveType: BreakBlocks
+        progressNeededExpression: '1'
+        specifics:
+          itemStackSelection:
+            materials:
+              '1': DIRT
+            any: false
+          deductIfBlockPlaced: true
+        conditions:
+          '1':
+            conditionType: CompletedObjective
+            progressNeeded: 1
+            negated: false
+            description: ''
+            specifics:
+              objectiveID: 1
+      '3':
+        objectiveType: BreakBlocks
+        progressNeededExpression: '1'
+        specifics:
+          itemStackSelection:
+            materials:
+              '1': SAND
+            any: false
+          deductIfBlockPlaced: true
+        conditions:
+          '1':
+            conditionType: CompletedObjective
+            progressNeeded: 1
+            negated: false
+            description: ''
+            specifics:
+              objectiveID: 1
+      '4':
+        objectiveType: KillMobs
+        progressNeededExpression: '1'
+        specifics:
+          mobToKill: zombie
+        conditions:
+          '1':
+            conditionType: CompletedObjective
+            progressNeeded: 1
+            negated: false
+            description: ''
+            specifics:
+              objectiveID: 2
+          '2':
+            conditionType: CompletedObjective
+            progressNeeded: 1
+            negated: false
+            description: ''
+            specifics:
+              objectiveID: 3
+    limits:
+      completions: -1
+      accepts: -1
+      fails: -1
+    takeEnabled: true
+    abortEnabled: true
+    acceptCooldown:
+      complete: -1
+    rewards:
+      '1':
+        actionType: Number
+        specifics:
+          expression: '2'
+          variableName: QuestPoints
+          operator: add
+          additionalBooleans:
+            notifyPlayer: '0.0'
+      '2':
+        actionType: Number
+        specifics:
+          expression: '300'
+          variableName: Money
+          operator: add
+      '3':
+        actionType: GiveItem
+        specifics:
+          itemStackSelection:
+            materials:
+              '1': WOODEN_SWORD
+            any: false
+          nqitemamount: 1

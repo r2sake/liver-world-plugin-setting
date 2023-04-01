@@ -1,0 +1,89 @@
+panels:
+  towny_menu:
+    perm: default
+    rows: 6
+    title: '&8Towny Menu'
+    commands: 
+    - towny_menu
+    empty: BLACK_STAINED_GLASS_PANE
+    item:
+      '10':
+        material: PAPER
+        stack: 1
+        name: '町の情報を表示'
+        lore:
+        - '&7今いる町の情報を表示します。'
+        - '&7町はチャンク単位です。今いるチャンクが町に属している必要があります'
+        commands:
+          - town here
+      '11':
+        material: MAP
+        stack: 1
+        name: '町の一覧を表示'
+        lore:
+        - '&7町の一覧を表示します。'
+        commands:
+          - town list
+      '33':
+        material: COBBLESTONE
+        stack: 1
+        name: ''
+      '34':
+        material: COBBLESTONE
+        stack: 1
+        name: ''
+      '35':
+        material: COBBLESTONE
+        stack: 1
+        name: ''
+      '42':
+        material: OAK_LOG
+        stack: 1
+        name: ''
+      '43':
+        material: DARK_OAK_DOOR
+        stack: 1
+        name: '&e戻る'
+        lore:
+        - 'メインメニューに戻ります'
+        - open= main_menu
+      '44':
+        material: OAK_LOG
+        stack: 1
+        name: ''
+      '45':
+        material: GRASS_BLOCK
+        stack: 1
+        name: ''
+      '46':
+        material: GRASS_BLOCK
+        stack: 1
+        name: ''
+      '47':
+        material: GRASS_BLOCK
+        stack: 1
+        name: ''
+      '48':
+        material: GRASS_BLOCK
+        stack: 1
+        name: ''
+      '49':
+        material: GRASS_BLOCK
+        stack: 1
+        name: ''
+      '50':
+        material: GRASS_BLOCK
+        stack: 1
+        name: ''
+      '51':
+        material: GRASS_BLOCK
+        stack: 1
+        name: ''
+      '52':
+        material: GRASS_BLOCK
+        stack: 1
+        name: ''
+      '53':
+        material: GRASS_BLOCK
+        stack: 1
+        name: ''
